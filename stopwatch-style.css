@@ -1,0 +1,95 @@
+:root {
+  --bg-light: linear-gradient(to right, #fdfcfb, #e2d1c3);
+  --bg-dark: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  --glass: rgba(255, 255, 255, 0.1);
+  --blur: blur(10px);
+  --accent: #00ffe5;
+  --accent-glow: 0 0 15px #00ffe5;
+  --text: #ffffff;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  background: var(--bg-light);
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.5s ease;
+}
+
+[data-theme="dark"] {
+  background: var(--bg-dark);
+}
+
+.container {
+  backdrop-filter: var(--blur);
+  background: var(--glass);
+  border-radius: 20px;
+  padding: 40px;
+  text-align: center;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.37);
+  border: 1px solid rgba(255,255,255,0.18);
+  width: 90%;
+  max-width: 400px;
+  color: var(--text);
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-shadow: 0 0 5px var(--accent);
+}
+
+#display {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  color: var(--accent);
+  text-shadow: var(--accent-glow);
+  background-color: rgba(0, 0, 0, 0.2);
+  letter-spacing: 2px;
+}
+
+.controls button,
+#modeToggle {
+  background: transparent;
+  border: 2px solid var(--accent);
+  color: var(--accent);
+  padding: 12px 20px;
+  font-size: 1rem;
+  margin: 5px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.controls button:hover,
+#modeToggle:hover {
+  background: var(--accent);
+  color: #000;
+  box-shadow: var(--accent-glow);
+}
+
+#laps {
+  max-height: 200px;
+  overflow-y: auto;
+  list-style: none;
+  margin-top: 20px;
+  padding-left: 0;
+}
+
+#laps li {
+  background: rgba(255, 255, 255, 0.08);
+  margin-bottom: 5px;
+  padding: 8px;
+  border-left: 4px solid var(--accent);
+  border-radius: 4px;
+  font-family: monospace;
+  color: var(--text);
+}
