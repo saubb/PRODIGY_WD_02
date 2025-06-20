@@ -10,9 +10,9 @@ The goal is to create a fully functional and attractive **stopwatch web applicat
 - Beautiful UI with neon glow and glassmorphism
 
 ## 📁 File Structure
-- `stopwatch-enhanced.html`: Main HTML structure
-- `stopwatch-enhanced.css`: Styling (responsive + modern)
-- `stopwatch-enhanced.js`: JavaScript functionality
+- `stopwatch.html`: Main HTML structure
+- `stopwatch-style.css`: Styling (responsive + modern)
+- `stopwatch-scripts.js`: JavaScript functionality
 
 ##  How to Run
 1. Clone or download this repository
