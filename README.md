@@ -20,9 +20,6 @@ The goal is to create a fully functional and attractive **stopwatch web applicat
 2. Open `stopwatch-enhanced.html` in any modern browser
 3. Click **Start** to begin timing, **Lap** to record laps, and **Reset** to clear
 
-## 📸 Screenshots
-*(Insert a screenshot of your stopwatch UI here)*
-
 ## 🛠️ Technologies Used
 - HTML5
 - CSS3
